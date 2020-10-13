@@ -6,7 +6,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "kill": "node scripts/kill",
+    "soon": "node scripts/soon",
+    "myNFTs": "node scripts/myNFTs"
   },
   "keywords": [],
   "author": "",

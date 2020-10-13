@@ -10,11 +10,11 @@ const provider = new HDWalletProvider(
 const web3 = new Web3(provider);
 
 const address = "0x57f0B53926dd62f2E26bc40B30140AbEA474DA94"; // vNFT contract address
-const abi = require("./abis/vNFTAbi");
+const abi = require("../abis/vNFTAbi");
 
 const instance = new web3.eth.Contract(abi, address);
 
-const { gasStation } = require("./utils/axios");
+const { gasStation } = require("../utils/axios");
 
 // PARAMETERS
 const DEAD_ID = 72; // NFT id to kill

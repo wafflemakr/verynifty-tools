@@ -8,7 +8,7 @@ const { flow, partialRight: pr, keyBy, values } = _;
 const lastUniqBy = (iteratee) => flow(pr(keyBy, iteratee), values);
 
 const address = "0x57f0B53926dd62f2E26bc40B30140AbEA474DA94"; // vNFT contract address
-const abi = require("./abis/vNFTAbi");
+const abi = require("../abis/vNFTAbi");
 const instance = new web3.eth.Contract(abi, address);
 
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
